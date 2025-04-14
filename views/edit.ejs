@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white">
+        <div class="text-white p-10">
+            <form action="/edit" method="post">
+                <input class="block w-full rounded-md mt-2 px-4 py-2 bg-zinc-800 text-zinc-500" type="text" name="previous" id="name" placeholder="Previous Name" value="<%= filename %>" disabled="true">
+                <input class="mt-2 block w-full rounded-md px-4 py-2 resize-none bg-zinc-800" placeholder="New name" id="" name="new">
+                <input type="submit" value="Update" class="bg-green-600 px-4 mt-3 py-2 rounded-md">
+            </form>
+        </div>
+
+    </div>
+</body>
+</html>
